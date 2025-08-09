@@ -1,6 +1,15 @@
 # This is a sample workflow to get started with Actions
 name: First Workflow
 on: workflow_dispatch
+jobs:
+ first-job:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Print greeting
+     run: echo "Hello World"
+   - name: Print GoodBye
+     run: echo "Done Bye"
+     
 
 
 
